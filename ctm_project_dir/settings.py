@@ -124,7 +124,7 @@ STATIC_URL = '/static/'
 print("\n"+ BASE_DIR+"\n")
 STATICFILES_DIRS = [
     BASE_DIR +"/static",
-    '/var/www/static/',
+
 ]
 # Heroku settings.
 import django_heroku
