@@ -11,9 +11,6 @@ def homepage(request):
 
         return instrument_page(request)
     instrument_list = get_instruments()
-    instrument = Instrument.objects.get(name ="Guitar")
-    print(instrument.instrument_image.path)
-
 
     context = {
         'instrument_list': instrument_list
