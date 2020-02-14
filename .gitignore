@@ -1,0 +1,3 @@
+ctm/
+__pycache__/
+*.sqlite3

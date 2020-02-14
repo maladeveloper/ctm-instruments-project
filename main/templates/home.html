@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CTM</title>
+</head>
+<body>
+{% load static %}
+<center>
+    <h1>Instruments</h1>
+    {% for instrument in instrument_list %}
+      <h2>{{instrument.name}}</h2>
+          <figure>
+              {% with 'images/'|add:instrument.instrument_image as image_static %}
+              <img src="{% static image_static %}" alt='missing' width="100px" height="100px" />
+              {% endwith %}
+
+              <figcaption>{{instrument.caption}}</figcaption>
+          </figure>
+
+    {% endfor %}
+</center>
+</body>
+</html>
