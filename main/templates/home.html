@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--    <style>-->
+<!--        figure {-->
+<!--                  display: flex;-->
+<!--                  align-items: center;-->
+<!--                }-->
+<!--    </style>-->
   <title>CTM</title>
 </head>
 <body>
@@ -16,8 +22,12 @@
 
               <figcaption>{{instrument.caption}}</figcaption>
           </figure>
-
+    <form method="post">{% csrf_token %}
+    <input type="submit" name={{instrument.name}} value= "Learn More" onclick="location.href='{% url 'instrument_page' %}'"  />
+    </form>
     {% endfor %}
+
+
 </center>
 </body>
 </html>
