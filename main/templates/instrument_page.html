@@ -14,11 +14,17 @@
           padding-left: 200px;
 
                     }
+           .heading{
+                    font-family:Times New Roman;
+                    font-size: 80px;
+                    font-weight: 900;
+                    }
+
     </style>
 </head>
 <body>
     <center>
-        <h1>{{instrument.name}}</h1>
+        <h1 class ="heading"  >{{instrument.name}}</h1>
         <iframe width="600" height="400" src={{src}}>
         </iframe>
     <div class="jumbotron">
@@ -27,6 +33,7 @@
         </div>
 
     </div>
+        <a href="{% url 'home' %}"class="btn btn-success">Home</a>
 
     </center>
 
