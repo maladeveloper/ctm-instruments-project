@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5b21ed33-9686-413e-a763-f9f95de8169d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +54,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="243" y="765" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581716482178">
+    <state x="243" y="765" width="598" height="397" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581730156998">
       <screen x="0" y="27" width="1080" height="1893" />
     </state>
-    <state x="243" y="765" width="583" height="397" key="#com.intellij.fileTypes.FileTypeChooser/1080.0.1920.1080/0.27.1080.1893@0.27.1080.1893" timestamp="1581716482178" />
+    <state x="243" y="765" width="598" height="397" key="#com.intellij.fileTypes.FileTypeChooser/1080.0.1920.1080/0.27.1080.1893@0.27.1080.1893" timestamp="1581730156998" />
     <state x="193" y="557" width="683" height="813" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581729880232">
       <screen x="0" y="27" width="1080" height="1893" />
     </state>
