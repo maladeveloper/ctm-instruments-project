@@ -1,33 +1,47 @@
+
 <!DOCTYPE html>
+{% load bootstrap4 %}
 <html>
-<head>
-<!--    <style>-->
-<!--        figure {-->
-<!--                  display: flex;-->
-<!--                  align-items: center;-->
-<!--                }-->
-<!--    </style>-->
-  <title>CTM</title>
-</head>
-<body>
-{% load static %}
-<center>
-    <h1>Instruments</h1>
-    {% for instrument in instrument_list %}
-      <h2>{{instrument.name}}</h2>
-          <figure>
-              {% with 'images/'|add:instrument.instrument_image as image_static %}
-              <img src="{% static image_static %}" alt='missing' width="100px" height="100px" />
-              {% endwith %}
+    <head>
 
-              <figcaption>{{instrument.caption}}</figcaption>
-          </figure>
-    <form method="post">{% csrf_token %}
-    <input type="submit" name={{instrument.name}} value= "Learn More" onclick="location.href='{% url 'instrument_page' %}'"  />
-    </form>
-    {% endfor %}
+      <title>CTM</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full' %}
+        <style>
+            .card-img-top {
+                            width: 100%;
+                            height: 20vw;
+                            object-fit: cover;
+                        }
+             .card {
+                    width: 30rem;
+                    margin-top: 50px;
+                    }
+         </style>
+    </head>
+    <body>
+    {% load static %}
+        <center>
+
+            {% for instrument in instrument_list %}
+                <div class="card" >
+                <h3  class="card-header">{{instrument.name}}</h3>
+
+                    {% with 'images/'|add:instrument.instrument_image as image_static %}
+                  <img src="{% static image_static %}" alt='missing' width="100px" height="100px" class="card-img-top"/>
+                  {% endwith %}
+                    <div class="card-body">
+                    <p class="card-text">{{instrument.caption}}</p>
+                    </div>
 
 
-</center>
-</body>
+                <form method="post">{% csrf_token %}
+                    <input class="btn btn-primary" type="submit" name={{instrument.name}} value= "Learn More" onclick="location.href='{% url 'instrument_page' %}'"  />
+                </form>
+                    <br>
+                     </div>
+            {% endfor %}
+
+        </center>
+    </body>
 </html>
