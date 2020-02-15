@@ -10,10 +10,25 @@ class Instrument(models.Model):
     date_added = models.DateTimeField(auto_now_add=True)
     instrument_image = models.ImageField()
     caption = models.TextField()
+    youtube_url = models.CharField(max_length=100)
+    youtube_code = None
 
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.youtube_code = self.change_url()
 
     def __str__(self):
         """Return a string representation of the model."""
         return self.name
+
+    def change_url(self):
+        old_string = self.youtube_url
+        new_string = ""
+        i = len(old_string) - 1
+        while old_string[i] != "=":
+            new_string = new_string + old_string[i]
+            i=i-1
+
+        return new_string[::-1]
 
 

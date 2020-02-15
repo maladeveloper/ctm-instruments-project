@@ -21,12 +21,18 @@ def instrument_page(request):
     chosen_instrument = None
     request_post = request.POST
     #Choose the instrument that has been requested
-    instrument_list = get_instruments()
-    for instrument in instrument_list:
-        if instrument["name"] in request_post:
+
+    #Get all instrument objects
+    all_instruments = Instrument.objects.all()
+    for instrument in all_instruments:
+        if instrument.name in request_post:
             chosen_instrument = instrument
+    print(chosen_instrument)
+    print(chosen_instrument.youtube_code)
+
     context = {
-        'instrument': chosen_instrument
+        'instrument': chosen_instrument,
+        'src': "https://www.youtube.com/embed/"+ chosen_instrument.youtube_code
     }
 
     return render(request, 'instrument_page.html',context)
