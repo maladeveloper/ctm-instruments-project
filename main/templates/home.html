@@ -20,16 +20,13 @@
          </style>
     </head>
     <body>
-    {% load static %}
         <center>
 
             {% for instrument in instrument_list %}
                 <div class="card" >
                 <h3  class="card-header">{{instrument.name}}</h3>
 
-                    {% with 'images/'|add:instrument.instrument_image as image_static %}
-                  <img src="{% static image_static %}" alt='missing' width="100px" height="100px" class="card-img-top"/>
-                  {% endwith %}
+                  <img src="{{ instrument.instrument_image.url }}" alt='missing' width="100px" height="100px" class="card-img-top"/>
                     <div class="card-body">
                     <p class="card-text">{{instrument.caption}}</p>
                     </div>

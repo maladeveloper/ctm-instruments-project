@@ -10,7 +10,9 @@ def homepage(request):
     if request.method == "POST":
 
         return instrument_page(request)
-    instrument_list = get_instruments()
+    instrument_list = Instrument.objects.all()
+    print(instrument_list[0].instrument_image.url)
+
 
     context = {
         'instrument_list': instrument_list

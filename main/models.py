@@ -8,7 +8,7 @@ class Instrument(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
-    instrument_image = models.ImageField()
+    instrument_image = models.ImageField(upload_to='images/')
     caption = models.TextField()
     youtube_url = models.CharField(max_length=100, default="https://www.youtube.com/watch?v=7IR7xB3VPPc")
     youtube_code = None

@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="5b21ed33-9686-413e-a763-f9f95de8169d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/templates/instrument_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/instrument_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctm_project_dir/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctm_project_dir/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctm_project_dir/static/images/drum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctm_project_dir/static/images/violin.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctm_project_dir/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ctm_project_dir/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/drum.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/guitar.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/guitar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/violin.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +68,10 @@
       <screen x="0" y="27" width="1080" height="1893" />
     </state>
     <state x="243" y="765" width="598" height="397" key="#com.intellij.fileTypes.FileTypeChooser/1080.0.1920.1080/0.27.1080.1893@0.27.1080.1893" timestamp="1581730156998" />
-    <state x="193" y="557" width="683" height="813" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581729880232">
-      <screen x="0" y="27" width="1080" height="1893" />
+    <state x="343" y="322" width="683" height="813" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1581812251725">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="193" y="557" width="683" height="813" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1080.0.1920.1080/0.27.1080.1893@0.27.1080.1893" timestamp="1581729880232" />
+    <state x="343" y="322" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1581812251725" />
   </component>
 </project>
