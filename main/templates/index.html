@@ -35,7 +35,6 @@
                 <form method="post">{% csrf_token %}
                     <input class="btn btn-primary" type="submit" name={{instrument.name}} value= "Learn More" onclick="location.href='{% url 'instrument_page' %}'"  />
                 </form>
-                    <br>
                      </div>
             {% endfor %}
 

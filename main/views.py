@@ -13,16 +13,13 @@ def homepage(request):
     instrument_list = Instrument.objects.all()
     for instrument in instrument_list:
         instrument.image_url = "http://ctminstruments.s3.amazonaws.com/"+instrument.image_url
-        print(instrument.image_url)
-        print(instrument.image_url)
-        print(instrument.image_url)
-        print(instrument.image_url)
+
 
 
     context = {
         'instrument_list': instrument_list
     }
-    return render(request, 'home.html', context)
+    return render(request, 'index.html', context)
 
 def instrument_page(request):
     chosen_instrument = None
