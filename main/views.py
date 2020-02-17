@@ -11,7 +11,12 @@ def homepage(request):
 
         return instrument_page(request)
     instrument_list = Instrument.objects.all()
-    print(instrument_list[0].instrument_image.url)
+    for instrument in instrument_list:
+        instrument.image_url = "http://ctminstruments.s3.amazonaws.com/"+instrument.image_url
+        print(instrument.image_url)
+        print(instrument.image_url)
+        print(instrument.image_url)
+        print(instrument.image_url)
 
 
     context = {
@@ -44,3 +49,13 @@ def get_instruments():
     instrument_set = Instrument.objects.values()
     instrument_list = [instrument for instrument in instrument_set]
     return instrument_list
+
+
+def change_url(old_string):
+        new_string = ""
+        i = len(old_string) - 1
+        while old_string[i] != "/":
+            new_string = new_string + old_string[i]
+            i=i-1
+
+        return new_string[::-1]
